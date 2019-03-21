@@ -2,6 +2,7 @@
   - python, pycharm 설치 
   - python, pycharm 환경설정 및 인터페이스 이해
   - "helloWorld" program 작성 및 실행
+  - vi, emacs, notepad++ 등 에디터에 대해서 알아보기
     
 * python, pycharm 설치
 ** python 설치
@@ -20,7 +21,7 @@ https://www.jetbrains.com/pycharm/download/#section=windows
    [[./images/pythonSetting02.jpg]]
    
 
-** [#B] pycharm 환경설정
+** pycharm 환경설정
 
    
 * 유투브 설치 동영상 링크
@@ -42,3 +43,13 @@ https://www.programiz.com/python-programming/keywords-identifier
 | assert | else     | import  | pass     | aa     |
 | break  | except   | in      | raise    | bb     |
 |--------+----------+---------+----------+--------|
+
+* helloWord.py
+  #+BEGIN_SRC python
+    print("Hello World")
+    for x in range(2,9):
+	for y in range(2,9):
+	    print("{} * {} = {}".format(x,y,x*y), end="")
+	print("")
+  
+  #+END_SRC
