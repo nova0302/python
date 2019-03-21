@@ -1,4 +1,6 @@
+# -*- org-image-actual-width: nil; -*-
 * 학습목표
+  - interpreter, compile language 차이 이해
   - python, pycharm 설치 
   - python, pycharm 환경설정 및 인터페이스 이해
   - "helloWorld" program 작성 및 실행
