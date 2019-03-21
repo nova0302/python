@@ -6,12 +6,12 @@
     
 * python, pycharm 설치
 ** python 설치
-    https://www.python.org/downloads/
+   - [[https://www.python.org/downloads/][python]]
 [[./images/pythonDownload.jpg]]
   
 
 ** pycharm 설치
-https://www.jetbrains.com/pycharm/download/#section=windows
+   - [[https://www.jetbrains.com/pycharm/download/#section=windows][pycharm]]
 
 [[./images/pycharmDownload.jpg]]
 
@@ -53,3 +53,10 @@ https://www.programiz.com/python-programming/keywords-identifier
 	print("")
   
   #+END_SRC
+  
+* 에디터 
+  - [[https://notepad-plus-plus.org/download/v7.6.4.html][Notepad++]]
+  - [[https://www.sublimetext.com/3][Sublime Text 3]]
+  - [[https://www.vim.org/][vim]]
+  - [[https://www.gnu.org/software/emacs/download.html][emacs]]
+  - [[https://www.editplus.com/download.html][EditPlus]] , not free
