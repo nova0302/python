@@ -1,0 +1,44 @@
+* 학습목표
+  - python, pycharm 설치 
+  - python, pycharm 환경설정 및 인터페이스 이해
+  - "helloWorld" program 작성 및 실행
+    
+* python, pycharm 설치
+** python 설치
+    https://www.python.org/downloads/
+[[./images/pythonDownload.jpg]]
+  
+
+** pycharm 설치
+https://www.jetbrains.com/pycharm/download/#section=windows
+
+[[./images/pycharmDownload.jpg]]
+
+* 환 경 설 정
+** python 환경설정
+   [[./images/pythonsetting01.jpg]]
+   [[./images/pythonsetting02.jpg]]
+   
+
+** pycharm 환경설정
+
+   
+* 유투브 설치 동영상 링크
+https://www.youtube.com/watch?v=Tz4yW7cxWN4
+   
+* 교재웹사이트
+https://wikidocs.net/book/1
+
+
+* python 예약어(keywords) 리스트
+https://www.programiz.com/python-programming/keywords-identifier
+
+|--------+----------+---------+----------+--------|
+| false  | class    | finally | is       | return |
+| None   | continue | for     | lambda   | try    |
+| True   | def      | from    | nonlocal | while  |
+| and    | del      | global  | not      | with   |
+| as     | elif     | if      | or       | yield  |
+| assert | else     | import  | pass     | aa     |
+| break  | except   | in      | raise    | bb     |
+|--------+----------+---------+----------+--------|
