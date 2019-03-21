@@ -25,14 +25,14 @@
 
    
 * 유투브 설치 동영상 링크
-https://www.youtube.com/watch?v=Tz4yW7cxWN4
+  - [[https://www.youtube.com/watch?v=Tz4yW7cxWN4][python 및 pycharm 설치 동영상]]
    
 * 교재웹사이트
-https://wikidocs.net/book/1
+  - [[https://wikidocs.net/book/1][wikidocs]]
 
 
 * python 예약어(keywords) 리스트
-https://www.programiz.com/python-programming/keywords-identifier
+  - [[https://www.programiz.com/python-programming/keywords-identifier][python reserved words]]
 
 |--------+----------+---------+----------+--------|
 | false  | class    | finally | is       | return |
