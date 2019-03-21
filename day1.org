@@ -16,7 +16,7 @@
 #+NAME: fig: language comparision
 #+CAPTION : 언어비교
 #+ATTR_ORG: width 600
-   [[./images/languageComparision.jpg][compiled && interpreted language 비교]]
+[[./images/languageComparision.jpg]]
     
 * python, pycharm 설치
 ** python 설치
