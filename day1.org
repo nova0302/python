@@ -7,12 +7,17 @@
 * python, pycharm 설치
 ** python 설치
    - [[https://www.python.org/downloads/][python]]
+#+NAME: fig: python
+#+ATTR_ORG: width 800
 [[./images/pythonDownload.jpg]]
   
 
 ** pycharm 설치
    - [[https://www.jetbrains.com/pycharm/download/#section=windows][pycharm]]
 
+     
+#+NAME: fig: pycharm
+#+ATTR_ORG: width 800
 [[./images/pycharmDownload.jpg]]
 
 * 환 경 설 정
