@@ -6,6 +6,18 @@
   - "helloWorld" program 작성 및 실행
   - vi, emacs, notepad++ 등 에디터에 대해서 알아보기
     
+
+* interpreter && compiler
+** interpreter language
+   - python, perl, tcl
+** compile language
+   - c, c++, 
+** 비교 
+#+NAME: fig: language comparision
+#+CAPTION : 언어비교
+#+ATTR_ORG: width 600
+   [[./images/languageComparision.jpg][compiled && interpreted language 비교]]
+    
 * python, pycharm 설치
 ** python 설치
    - [[https://www.python.org/downloads/][python]]
