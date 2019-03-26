@@ -71,15 +71,14 @@
 |--------+----------+---------+----------+--------|
 
 * helloWord.py
-  #+BEGIN_SRC python
-    print("Hello World")
-    for x in range(2,9):
-	for y in range(2,9):
-	    print("{} * {} = {}".format(x,y,x*y), end="")
-	print("")
-  
-  #+END_SRC
-  
+#+BEGIN_SRC python
+print("Hello World")
+for x in range(2,9):
+    for y in range(2,9):
+	print("{} * {} = {}".format(x,y,x*y), end="")
+    print("")
+#+END_SRC
+
 * 에디터 
   - [[https://notepad-plus-plus.org/download/v7.6.4.html][Notepad++]]
   - [[https://www.sublimetext.com/3][Sublime Text 3]]
