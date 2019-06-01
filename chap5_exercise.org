@@ -21,8 +21,7 @@
   #+END_SRC
 
 ** 모 듈
-*** Q1. 이전 문제에서 작성한 Calculator 클래스를 calculator.py라는 파일로 저장하자. 그리고 이 파일을
-모듈로 사용하려고 한다. 다음처럼 동작하도록 만들어 보자.
+*** Q1. 이전 문제에서 작성한 Calculator 클래스를 calculator.py라는 파일로 저장하자. 그리고 이 파일을 모듈로 사용하려고 한다. 다음처럼 동작하도록 만들어 보자.
  #+BEGIN_SRC python
    >> from claculator import Calculator
    >> cal1 = Calculator([1,2,3,4,5])
