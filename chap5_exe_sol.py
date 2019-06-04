@@ -5,7 +5,7 @@ class Calculator:
 
     def sum(self):
         total = 0;
-        for n in lst:
+        for n in self.lst:
             total += n
         return total
 
