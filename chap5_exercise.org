@@ -9,13 +9,13 @@
     >> cal1 = Calculator([1,2,3,4,5])
     >> cal.sum() #함계
     15
-    >> cal1.aveg() #평균
+    >> cal1.avg() #평균
     3.0
 
     >> cal2 = Calculator([6,7,8,9,10])
     >> cal.sum() #함계
     40
-    >> cal1.aveg() #평균
+    >> cal1.avg() #평균
     8.0
 
   #+END_SRC
