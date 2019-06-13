@@ -85,3 +85,6 @@ for x in range(2,9):
   - [[https://www.vim.org/][vim]]
   - [[https://www.gnu.org/software/emacs/download.html][emacs]]
   - [[https://www.editplus.com/download.html][EditPlus]] , not free
+  - [[https://www.youtube.com/watch?v=oZl8x3oOxsg][python, pycharm, kivy 설치 1]]
+  - [[https://www.youtube.com/watch?v=GJKGs54EtOU][python, pycharm, kivy 설치 2]]
+
