@@ -1,0 +1,66 @@
+
+# -*- org-image-actual-width: nil; -*-
+* [[https://wikidocs.net/30][제 5-4 예 외 처 리]]
+
+* 1. Zerodivisionerror Exception
+  
+** 1. without exception
+*** Q1. 다음과 같이 동작하는 클래스 Calculator를 작성해보자
+  #+BEGIN_SRC python
+    #chap5_without_exception_zerodivision.py
+    while True:
+	x = input('Enter a number or Q to quit!')
+	if x == 'Q':
+	    break
+	x = int(x)
+	print(f'4 / {x} = {4/x}')
+
+  #+END_SRC
+
+** 2. with exception
+ #+BEGIN_SRC python
+   #chap5_exception_zerodivision.py
+   while True:
+       x = input('Enter a number or Q to quit!')
+       if x == 'Q':
+	   break
+       x = int(x)
+       try:
+	   print(f'4 / {x} = {4/x}')
+       except ZeroDivisionError as e:
+	   print(e)
+ #+END_SRC
+
+* 2. Filenotfounderror Exception
+  
+** 1. without exception
+*** Q1. 다음과 같이 동작하는 클래스 Calculator를 작성해보자
+  #+BEGIN_SRC python
+    #chap5_without_exception_file.py
+    while True:
+	x = input('Enter a file name[f1.txt, t2.txt f3.txt to print or Q to quit!')
+	if x == 'Q':
+	    break
+	print(f'{x} 파일 내용')
+	with open(x,'r') as f:
+	    lines = f.readlines()
+	    for line in lines:
+		print(line)
+  #+END_SRC
+
+** 2. with exception
+ #+BEGIN_SRC python
+#chap5_exception_file.py
+while True:
+    x = input('Enter a file name[f1.txt, t2.txt f3.txt to print or Q to quit!')
+    if x == 'Q': break
+    try:
+        f = open(x, 'r')
+    except FileNotFoundError as e:
+        print(e)
+    else:
+        print(f'{x} 파일 내용')
+        with open(x,'r') as f:
+            print(f.read())
+ 
+ #+END_SRC
