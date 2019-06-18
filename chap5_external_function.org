@@ -5,6 +5,7 @@
 * 1. Zerodivisionerror Exception
   
 ** 1. without exception
+*** Q1. 다음과 같이 동작하는 클래스 Calculator를 작성해보자
   #+BEGIN_SRC python
     #chap5_without_exception_zerodivision.py
     while True:
@@ -33,6 +34,7 @@
 * 2. Filenotfounderror Exception
   
 ** 1. without exception
+*** Q1. 다음과 같이 동작하는 클래스 Calculator를 작성해보자
   #+BEGIN_SRC python
     #chap5_without_exception_file.py
     while True:
