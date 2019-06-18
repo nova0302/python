@@ -3,14 +3,15 @@
 * [[https://wikidocs.net/33][제 5-6 외 장 함 수]]
 
 * 1. sys
-  
-** 1. sys.argv
+  - 파이썬 인터프리터가 제공하는 변수나 함수를 직접제어
+** 1-1. sys.argv
   #+BEGIN_SRC python
 # 실행방법
 # 1. 명령프롬프트를 실행한다.
-# 2. python gugudan.py 6
-# 3. 실행결과: 구구단이 출력되도, gugudan.txt파일이 생성된다.
-# 4. 메모장이나 텍스트에디터로 확인해 본다.
+# 2. 명력프롬프트에 다음과 같이 입력한다.
+#    >>python gugudan.py 6
+# 3. 실행결과: 구구단이 출력되고, gugudan.txt파일이 생성된다.
+# 4. 메모장이나 텍스트에디터로 gugudan.txt 파일을 확인해 본다.
 import sys
 x,y = (2,2)
 with open('gugudan.txt', 'w') as f:
@@ -30,13 +31,14 @@ with open('gugudan.txt', 'w') as f:
         f.write('\n')
   #+END_SRC
 
-** 2. sys.path
+** 1-2. sys.path
  #+BEGIN_SRC python
  >> import sys
  >> sys.path
  #+END_SRC
 
-* 2. pickle
+* 2. pickle 
+  - 객체의 형태를 그래로 저장 및 불러올 수 있다.
   #+BEGIN_SRC python
 #chap5_5.py
 import pickle
@@ -51,13 +53,33 @@ with open('test.txt', 'rb') as f:
   #+END_SRC
   
 * 3. os
+  - 환경변수나 디렉토리, 파일등의 OS자원을 제어
+** 3-1. environ
+  #+BEGIN_SRC python
+  >> import os
+  >> os.environ
+  >> os.environ['PATH']
+  #+END_SRC
+** 3-2. chdir, getcwd
+  #+BEGIN_SRC python
+  >> os.chdir('c:\python')
+  >> os.getcwd()
+  #+END_SRC
+** 3-3. system
+   - 시스템 자체 프로그램이나 명령을 파이썬에서 호출
+  #+BEGIN_SRC python
+  >> os.system("pwd")
+  >> os.system("dir")
+  >> os.system("mkdir python_work")
+  #+END_SRC
 
+ 
   |---------------------+------------------------------------------------|
   | 함수                | 설    명                                       |
   |---------------------+------------------------------------------------|
   | os.mkdir(디렉토리)  | 디렉토리를 생성한다.                           |
   | os.rmdir(디렉토리)  | 디텍토리를 삭제한다. 단 비어있어야 한다.       |
-  | os.rename(src, des) | src라는 이름의 파일을 dst라는 이름으로 바꾼다. |
+  | os.rename(src, des) | src라는 이름의 파일을 dse라는 이름으로 바꾼다. |
   |---------------------+------------------------------------------------|
  
 
