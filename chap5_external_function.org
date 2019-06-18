@@ -1,77 +1,65 @@
 
 # -*- org-image-actual-width: nil; -*-
-* [[https://wikidocs.net/30][제 5-4 예 외 처 리]]
+* [[https://wikidocs.net/33][제 5-6 외 장 함 수]]
 
-* 1. Zerodivisionerror Exception
+* 1. sys
   
-** 1. without exception
-*** Q1. 다음과 같이 동작하는 클래스 Calculator를 작성해보자
+** 1. sys.argv
   #+BEGIN_SRC python
-    #chap5_without_exception_zerodivision.py
+# 실행방법
+# 1. 명령프롬프트를 실행한다.
+# 2. python gugudan.py 6
+# 3. 실행결과: 구구단이 출력되도, gugudan.txt파일이 생성된다.
+# 4. 메모장이나 텍스트에디터로 확인해 본다.
+import sys
+x,y = (2,2)
+with open('gugudan.txt', 'w') as f:
     while True:
-	x = input('Enter a number or Q to quit!')
-	if x == 'Q':
-	    break
-	x = int(x)
-	print(f'4 / {x} = {4/x}')
-
+        if x > int(sys.argv[1]):
+            break
+        while True:
+            if y > int(sys.argv[1]):
+                break
+            msg = f'{x} x {y} = {x*y} '
+            print(msg, end = '')
+            f.write(msg)
+            y += 1
+        y = 2
+        x += 1
+        print('')
+        f.write('\n')
   #+END_SRC
 
 ** 2. with exception
  #+BEGIN_SRC python
-   #chap5_exception_zerodivision.py
-   while True:
-       x = input('Enter a number or Q to quit!')
-       if x == 'Q':
-	   break
-       x = int(x)
-       try:
-	   print(f'4 / {x} = {4/x}')
-       except ZeroDivisionError as e:
-	   print(e)
+ >> import sys
+ >> sys.path
  #+END_SRC
 
-* 2. Filenotfounderror Exception
-  
-** 1. without exception
-*** Q1. 다음과 같이 동작하는 클래스 Calculator를 작성해보자
+* 2. pickle
   #+BEGIN_SRC python
-    #chap5_without_exception_file.py
-    while True:
-	x = input('Enter a file name[f1.txt, t2.txt f3.txt] to print or Q to quit!')
-	if x == 'Q':
-	    break
-	print(f'{x} 파일 내용')
-	with open(x,'r') as f:
-	    lines = f.readlines()
-	    for line in lines:
-		print(line)
-  #+END_SRC
+#chap5_5.py
+import pickle
+data = {1:'python', 2:'you need'}
+with open('test.txt', 'wb') as f:
+    pickle.dump(data, f)
 
-** 2. with exception
- #+BEGIN_SRC python
-#chap5_exception_file.py
-while True:
-    x = input('Enter a file name[f1.txt, t2.txt f3.txt] to print or Q to quit!')
-    if x == 'Q': break
-    try:
-        f = open(x, 'r')
-    except FileNotFoundError as e:
-        print(e)
-    else:
-        print(f'{x} 파일 내용')
-        with open(x,'r') as f:
-            print(f.read())
+with open('test.txt', 'rb') as f:
+    data = pickle.load(f)
+    print('')
+    print(data[2], data[1])
+  #+END_SRC
+  
+* 3. os
+  #+BEGIN_SRC python
+  +-----+-----+-----+
+  |함수     |     |     |
+  +-----+-----+-----+
+  |     |     |     |
+  +-----+-----+-----+
+  |     |     |     |
+  +-----+-----+-----+
+
+  #+END_SRC
  
- #+END_SRC
-
-** 3. f1.txt, f2.txt, f3.txt 내용
-***   f1.txt 
-    - This is f1.txt
-
-***   f2.txt 
-    - This is f2.txt
-
-***   f3.txt 
-    - This is f3.txt
 

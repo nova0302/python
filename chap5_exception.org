@@ -58,8 +58,8 @@ while True:
         print(e)
     else:
         print(f'{x} 파일 내용')
-        with open(x,'r') as f:
-            print(f.read())
+        print(f.read())
+	f.close()
  
  #+END_SRC
 
