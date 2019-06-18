@@ -38,7 +38,7 @@
   #+BEGIN_SRC python
     #chap5_without_exception_file.py
     while True:
-	x = input('Enter a file name[f1.txt, t2.txt f3.txt to print or Q to quit!')
+	x = input('Enter a file name[f1.txt, t2.txt f3.txt] to print or Q to quit!')
 	if x == 'Q':
 	    break
 	print(f'{x} 파일 내용')
@@ -52,7 +52,7 @@
  #+BEGIN_SRC python
 #chap5_exception_file.py
 while True:
-    x = input('Enter a file name[f1.txt, t2.txt f3.txt to print or Q to quit!')
+    x = input('Enter a file name[f1.txt, t2.txt f3.txt] to print or Q to quit!')
     if x == 'Q': break
     try:
         f = open(x, 'r')
@@ -64,3 +64,14 @@ while True:
             print(f.read())
  
  #+END_SRC
+
+** 3. f1.txt, f2.txt, f3.txt 내용
+***   f1.txt 
+    - This is f1.txt
+
+***   f2.txt 
+    - This is f2.txt
+
+***   f3.txt 
+    - This is f3.txt
+
