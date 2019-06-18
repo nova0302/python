@@ -30,7 +30,7 @@ with open('gugudan.txt', 'w') as f:
         f.write('\n')
   #+END_SRC
 
-** 2. with exception
+** 2. sys.path
  #+BEGIN_SRC python
  >> import sys
  >> sys.path
