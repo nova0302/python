@@ -56,21 +56,21 @@ with open('test.txt', 'rb') as f:
   - 환경변수나 디렉토리, 파일등의 OS자원을 제어
 ** 3-1. environ
   #+BEGIN_SRC python
-  >> import os
-  >> os.environ
-  >> os.environ['PATH']
+   import os
+   os.environ
+   os.environ['PATH']
   #+END_SRC
+
 ** 3-2. chdir, getcwd
   #+BEGIN_SRC python
-  >> os.chdir('c:\python')
-  >> os.getcwd()
+   os.chdir('c:\python')
+   os.getcwd()
   #+END_SRC
 ** 3-3. system
    - 시스템 자체 프로그램이나 명령을 파이썬에서 호출
   #+BEGIN_SRC python
-  >> os.system("pwd")
-  >> os.system("dir")
-  >> os.system("mkdir python_work")
+   os.system("dir")
+   os.system("mkdir python_work")
   #+END_SRC
 
  
