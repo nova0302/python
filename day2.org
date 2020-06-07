@@ -37,7 +37,23 @@
 |            | None                | F          |
 |------------+---------------------+------------|
 
+#+BEGIN_SRC python
+  if []:
+      print("True")
+  else:
+      print("False")
 
+  if "Python":
+      print("True")
+  else:
+      print("False")
+
+
+  if 3:
+      print("Treu")
+  else:
+      print("False")
+#+END_SRC
 
 * 연습문제 
   
