@@ -40,6 +40,10 @@
 #+NAME:   fig:SED-HR4049
    [[./images/idle.jpg]]
 
+#+CAPTION: configuration
+#+NAME:   fig:SED-HR4049
+   [[./images/config.jpg]]
+
 #+NAME: fig: python_setting01
 #+CAPTION : 파이썬 글꼴 설정
 #+ATTR_ORG: width 600
