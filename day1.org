@@ -36,9 +36,9 @@
 
 * 환 경 설 정
 ** python 환경설정
-#+CAPTION: This is the caption for the next figure link (or table)
+#+CAPTION: 파이썬 실행
 #+NAME:   fig:SED-HR4049
-[[./images/idle.jpg][파이썬 IDLE 실행]]
+   [[./images/idle.jpg]]
 
 #+NAME: fig: python_setting01
 #+CAPTION : 파이썬 글꼴 설정
